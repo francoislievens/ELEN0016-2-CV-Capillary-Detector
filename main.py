@@ -1,7 +1,7 @@
 import numpy as np
 import time
 import matplotlib.pyplot as plt
-
+import os
 from ReadingBuffer import ReadingBuffer
 from MOG_Filter import MOG_filter
 from DropletDetector import DropletDetector
@@ -17,7 +17,7 @@ EVAL_BUFFER_LOAD = False
 DEVICE = 'cuda'
 
 BUFFER_SIZE = 500
-DEBUG = True
+DEBUG = False
 
 
 def counter(video_list):
@@ -149,11 +149,11 @@ def counter(video_list):
 if __name__ == '__main__':
 
     #video_list = ['CV2021_GROUP02', 'CV2021_GROUP03', 'CV2021_GROUP04']
-    video_list = ['CV2021_GROUP02']
+    #video_list = ['CV2021_GROUP02']
     #video_list = ['CV2021_GROUP01','CV2021_GROUP02', 'CV2021_GROUP03', 'CV2021_GROUP04', 'CV2021_GROUP05', 'CV2021_GROUP06', 'CV2021_GROUP07',
     #              'CV2021_GROUP08','CV2021_GROUP09', 'CV2021_GROUP10', 'CV2021_GROUP11', 'CV2021_GROUP12', 'CV2021_GROUP13', 'CV2021_GROUP14']
 
-    #video_list = os.listdir('Original_Dataset/images')
+    video_list = os.listdir('Original_Dataset/images')
     print('* ------------------------------------------------ *')
     print('* Input video list:')
     for itm in video_list:
