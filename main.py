@@ -1,9 +1,4 @@
-import torch
 import numpy as np
-import cv2
-import torch
-import os
-import sys
 import time
 import matplotlib.pyplot as plt
 
@@ -14,11 +9,6 @@ from UNetBuffer import UNetBuffer
 from UNetThread import UNetThread
 
 
-
-from utils import plot_boxes, load_UNet
-
-
-
 DATA_PATH = 'Original_Dataset'
 UNET_PATH = 'Model'
 UNET_NAME = 'UNet_A'
@@ -27,7 +17,7 @@ EVAL_BUFFER_LOAD = False
 DEVICE = 'cuda'
 
 BUFFER_SIZE = 500
-DEBUG = False
+DEBUG = True
 
 
 def counter(video_list):

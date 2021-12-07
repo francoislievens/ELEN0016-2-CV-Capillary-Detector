@@ -78,7 +78,7 @@ class UNetThread():
             for i in range(0, preds.shape[0]):
                 if self.debug:
                     dbg_frame = droplets[i, :, :].cpu().numpy()
-                    dbg_mask = preds[i, :, :]
+                    dbg_mask = preds[i, :, :] * 30
 
                 cnt, positions = count_peaks_2d(preds[i])
                 if cnt > 0:
@@ -105,18 +105,6 @@ class UNetThread():
                         cv2.imwrite('Intermediate_Results/Droplet_Detector/{}_d.jpg'.format(frames_idx[i]), dbg_frame)
                         cv2.imwrite('Intermediate_Results/Droplet_Detector/{}_e.jpg'.format(frames_idx[i]), dbg_mask)
 
-
-            """
-            if self.display:
-                for j in range(0, preds.shape[0]):
-                    disp_frame = preds[j].reshape(240, 240).cpu().numpy()
-                    print('droplet idx: {} - nb cell: {}'.format(self.global_idx, count[j] / 100))
-                    drp = droplets[j].reshape(240, 240).cpu().numpy()
-                    cv2.imshow('droplet', drp)
-                    cv2.imshow('cell_msk', disp_frame)
-                    print('Peaks: {}'.format(peaks[j].cpu().numpy()))
-                    cv2.waitKey()
-            """
             self.global_idx += 1
 
         # End of the program
