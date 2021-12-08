@@ -67,6 +67,9 @@ def get_droplet_coordinates(col_sum, col_sum_out_tsh, col_sum_in_tsh, droplet_mi
     that we enter a droplet while travelling the X axis and
     "col_sum_out_tsh" to detect when we out a droplet.
     To avoid some false droplet out when the sum of values
+    decrease to zero in the center of some droplets, the
+    output threshold is compared to the average sum of
+    columns of the 20 next columns.
     """
     # Init an array for coordinates
     array_end_idx = 0
@@ -104,7 +107,11 @@ def get_droplet_coordinates(col_sum, col_sum_out_tsh, col_sum_in_tsh, droplet_mi
 
 @njit
 def check_new_droplets(drop_coord, last_frame_drop, last_frame_detect, dist_thresh, drop_counter):
-
+    """
+    This method compare predictions from the previous
+    with the actual frame one in order to make the link
+    between a same droplet who move between frames.
+    """
     # Check if no new droplets
     find_idx = np.empty(len(drop_coord))
     prev_find = np.empty(len(drop_coord))
@@ -130,7 +137,12 @@ def check_new_droplets(drop_coord, last_frame_drop, last_frame_detect, dist_thre
 
 @njit
 def check_new_droplets_no_prev(drop_coord, drop_counter):
-
+    """
+    An adaptation of the previous method to the
+    case in which no droplets was present in the
+    previous frame. This is necessary to avoid
+    some empty array problems with Numba
+    """
     # Check if no new droplets
     find_idx = np.empty(len(drop_coord))
     prev_find = np.empty(len(drop_coord))
@@ -143,8 +155,11 @@ def check_new_droplets_no_prev(drop_coord, drop_counter):
 
     return drop_counter, find_idx, prev_find
 
-def count_peaks_2d(matrix,
+def count_peaks_2d_one_dim(matrix,
                    pk_min_thresh=5):
+    """
+    This method is used to 
+    """
     counter = 0
     results = []
     debug = False
@@ -179,7 +194,7 @@ def count_peaks_2d(matrix,
         plt.close()
     return counter, results
 
-def count_peaks_2d_bis(matrix,
+def count_peaks_2d(matrix,
                    pk_min_thresh=5):
     debug = False
     # Horizontal prediction:

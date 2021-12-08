@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="063d9119-25ad-4736-9b30-51ea26fb1f46" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NOTEBOOK.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/NOTEBOOK.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PredictForSubmit.py" beforeDir="false" afterPath="$PROJECT_DIR$/PredictForSubmit.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
     </list>
@@ -28,7 +26,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.PredictForSubmit">
+  <component name="RunManager" selected="Python.main">
     <configuration name="DataStatistics" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CV_V3" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -163,7 +161,7 @@
       <workItem from="1638967123214" duration="62000" />
       <workItem from="1638967732488" duration="122000" />
       <workItem from="1638967872873" duration="13000" />
-      <workItem from="1638967917543" duration="8114000" />
+      <workItem from="1638967917543" duration="8479000" />
     </task>
     <servers />
   </component>
