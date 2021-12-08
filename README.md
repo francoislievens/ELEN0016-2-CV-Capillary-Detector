@@ -1,17 +1,17 @@
 # ELEN0016-2-CV-Capillary-Detector
 
 ### How to excute the code 
- • The easier way to run this code is to run the [NOTEBOOK](https://github.com/francoislievens/ELEN0016-2-CV-Capillary-Detector/blob/main/NOTEBOOK.ipynb)
- • This noteook contains the following steps:
-    - Data Downloading from Cytomine platform
-    - Statistical Analysis of the downloaded data
-    - Dataset creation for the UNet Training
-    - UNet Training
-    - Plot training curves
-    - Video Analysis
-    - Load all components
-    - Prediction Step
-    - Model Evaluation
+ 1. The easier way to run this code is to run the [NOTEBOOK](https://github.com/francoislievens/ELEN0016-2-CV-Capillary-Detector/blob/main/NOTEBOOK.ipynb)
+ 1. This noteook contains the following steps:
+    1. Data Downloading from Cytomine platform
+    1. Statistical Analysis of the downloaded data
+    1. Dataset creation for the UNet Training
+    1. UNet Training
+    1. Plot training curves
+    1. Video Analysis
+    1. Load all components
+    1. Prediction Step
+    1. Model Evaluation
 
 ### Preliminary Notes
 
