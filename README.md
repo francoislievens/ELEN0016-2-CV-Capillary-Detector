@@ -3,7 +3,7 @@
 ### How to excute the code 
  • The easier way to run this code is to run the [NOTEBOOK](https://github.com/francoislievens/ELEN0016-2-CV-Capillary-Detector/blob/main/NOTEBOOK.ipynb)
  • This noteook contains the following steps:
-    – Data Downloading from Cytomine platform
+    - Data Downloading from Cytomine platform
     - Statistical Analysis of the downloaded data
     - Dataset creation for the UNet Training
     - UNet Training
