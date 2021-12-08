@@ -9,7 +9,10 @@ import math
 
 
 def shuffle_lst(lst, seed=1):
-
+    """
+    Simple code to shuffle a list
+    with a fixed seed
+    """
     np.random.seed(seed)
     idx_lst = np.arange(len(lst))
     np.random.shuffle(idx_lst)
@@ -18,6 +21,16 @@ def shuffle_lst(lst, seed=1):
 
 
 def heat_map_gen(coordinates, img_shape):
+    """
+    This code generate a 240 x 240 px heat-
+    map to produce target images during the
+    Unet training process.
+    Heat maps contain a 2D gaussian
+    centered on each cell center coordinates
+    such that the sum of the values in the
+    heatmap is equal to 100 * the number of
+    cells in the image.
+    """
 
     # Init the array
     label = np.zeros(img_shape, dtype=np.float32)
@@ -46,7 +59,15 @@ def heat_map_gen(coordinates, img_shape):
 
 @njit
 def get_droplet_coordinates(col_sum, col_sum_out_tsh, col_sum_in_tsh, droplet_min_width):
-
+    """
+    The goal of this function is to detect coordinates
+    of droplets by travelling the values of the sum of
+    columns in the mask provided by the MOG filter.
+    This code use "col_sum_in_tsh" as a threshold to detect
+    that we enter a droplet while travelling the X axis and
+    "col_sum_out_tsh" to detect when we out a droplet.
+    To avoid some false droplet out when the sum of values
+    """
     # Init an array for coordinates
     array_end_idx = 0
     drop_coord = np.empty((4, 4), dtype=np.int32)     # Note: we assume no more than 4 droplet in a frame
@@ -122,7 +143,7 @@ def check_new_droplets_no_prev(drop_coord, drop_counter):
 
     return drop_counter, find_idx, prev_find
 
-def count_peaks_2d_one_axis(matrix,
+def count_peaks_2d(matrix,
                    pk_min_thresh=5):
     counter = 0
     results = []
@@ -146,19 +167,19 @@ def count_peaks_2d_one_axis(matrix,
                 if matrix[sub_pk, pk] > 1.5:
                     counter += 1
                     results.append([pk, sub_pk])
-            if debug:
-                plt.plot(matrix[:, pk], color='red')
-                plt.title('Sub peak {}'.format(pk))
-                plt.show()
+                    if debug:
+                        plt.plot(matrix[:, pk], label='Y val for x={}'.format(pk))
 
 
-    if debug:
-        plt.plot(col_sum)
+    if debug and counter > 0:
+        plt.plot(col_sum, label='Column sum')
+        plt.title('Cell detection')
+        plt.legend()
         plt.show()
         plt.close()
     return counter, results
 
-def count_peaks_2d(matrix,
+def count_peaks_2d_bis(matrix,
                    pk_min_thresh=5):
     debug = False
     # Horizontal prediction:

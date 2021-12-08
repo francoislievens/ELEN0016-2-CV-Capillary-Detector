@@ -6,7 +6,7 @@ from utils import get_droplet_coordinates
 from utils import count_peaks_2d
 import sys
 
-INPUT_PATH = 'Original_Dataset/images/CV2021_GROUP05/group5.mp4'
+INPUT_PATH = 'Original_Dataset/images/CV2021_GROUP02/group2.mp4'
 UNET_PATH = 'Model/UNet_A/model_weights.pt'
 OUTPUT_PATH = 'Output_Results'
 

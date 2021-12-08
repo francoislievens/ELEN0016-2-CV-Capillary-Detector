@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="063d9119-25ad-4736-9b30-51ea26fb1f46" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/PredictForSubmit.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NOTEBOOK.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/NOTEBOOK.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictForSubmit.py" beforeDir="false" afterPath="$PROJECT_DIR$/PredictForSubmit.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,6 +159,11 @@
       <updated>1638880167275</updated>
       <workItem from="1638880169010" duration="13035000" />
       <workItem from="1638901603263" duration="9996000" />
+      <workItem from="1638967050110" duration="68000" />
+      <workItem from="1638967123214" duration="62000" />
+      <workItem from="1638967732488" duration="122000" />
+      <workItem from="1638967872873" duration="13000" />
+      <workItem from="1638967917543" duration="8114000" />
     </task>
     <servers />
   </component>
@@ -173,6 +180,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ComputerVIsion_Cell_Detector$DataStatistics.coverage" NAME="DataStatistics Coverage Results" MODIFIED="1638884774472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
