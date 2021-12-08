@@ -3,21 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="063d9119-25ad-4736-9b30-51ea26fb1f46" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CytomineDownloader.py" beforeDir="false" afterPath="$PROJECT_DIR$/CytomineDownloader.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataStatistics.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataStatistics.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DrawOutputs.py" beforeDir="false" afterPath="$PROJECT_DIR$/DrawOutputs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DropletDetector.py" beforeDir="false" afterPath="$PROJECT_DIR$/DropletDetector.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MOG_Filter.py" beforeDir="false" afterPath="$PROJECT_DIR$/MOG_Filter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NOTEBOOK.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/NOTEBOOK.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PredictForSubmit.py" beforeDir="false" afterPath="$PROJECT_DIR$/PredictForSubmit.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReadingBuffer.py" beforeDir="false" afterPath="$PROJECT_DIR$/ReadingBuffer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNetBuffer.py" beforeDir="false" afterPath="$PROJECT_DIR$/UNetBuffer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNetThread.py" beforeDir="false" afterPath="$PROJECT_DIR$/UNetThread.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNet_DataHandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/UNet_DataHandler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNet_DatasetBuilder.py" beforeDir="false" afterPath="$PROJECT_DIR$/UNet_DatasetBuilder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNet_Trainer.py" beforeDir="false" afterPath="$PROJECT_DIR$/UNet_Trainer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +161,7 @@
       <workItem from="1638967123214" duration="62000" />
       <workItem from="1638967732488" duration="122000" />
       <workItem from="1638967872873" duration="13000" />
-      <workItem from="1638967917543" duration="13237000" />
+      <workItem from="1638967917543" duration="14797000" />
     </task>
     <servers />
   </component>

@@ -80,6 +80,10 @@ def data_statistics(data_path):
         std_cell_bytrk.append(np.std(cells_by_tracker[key]))
         max_cell_bytrk.append(np.max(cells_by_tracker[key]))
 
+    max_cell_bytrk = []
+    for key in cells_by_tracker.keys():
+        max_cell_bytrk.append(np.max(cells_by_tracker[key]))
+
     # And standard deviation
 
     # Plot results
@@ -113,12 +117,18 @@ def data_statistics(data_path):
         nb_cell_data.append(np.round(itm, 0))
     tot_droplets = np.sum(nb_cell_data)
 
-    n, bins, patches = plt.hist(nb_cell_data, density=True, facecolor='g', alpha=0.75)
+    n, bins, patches = plt.hist(max_cell_bytrk, density=True, facecolor='g', alpha=0.75)
     plt.title('Distribution of the number of cells by droplets')
     plt.grid(True)
     plt.xlabel('Number of cells')
     plt.savefig('Figs/stat_cell_in_drp_histo.png')
     plt.show()
+    hist_cell = [0] * 10
+    for i in range(len(max_cell_bytrk)):
+        hist_cell[max_cell_bytrk[i]] += 1
+    for i in range(len(hist_cell)):
+        print('Nb droplets with {} cell: {}'.format(i, hist_cell[i]))
+
 
 
 def compare_distance(prev, actual, track):
