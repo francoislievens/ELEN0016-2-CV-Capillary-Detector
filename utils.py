@@ -1,3 +1,13 @@
+"""
+[ELEN0016-2]
+François Lievens
+Julien Hubar
+Matthias Pirlet
+December 2020
+
+This file contain the implementation of some of our
+sub-procedures used in our algorithm
+"""
 import cv2
 import numpy as np
 from numba import njit
@@ -158,7 +168,8 @@ def check_new_droplets_no_prev(drop_coord, drop_counter):
 def count_peaks_2d_one_dim(matrix,
                    pk_min_thresh=5):
     """
-    This method is used to 
+    This method is used to predict the coordinates
+    of cells from the mask out from the UNet
     """
     counter = 0
     results = []
@@ -196,6 +207,19 @@ def count_peaks_2d_one_dim(matrix,
 
 def count_peaks_2d(matrix,
                    pk_min_thresh=5):
+    """
+    This function is an adaptation of the
+    cout_peaks_2d_one_dim method. In this
+    implementation, predictions are done
+    a first time by doing the sum of columns
+    before analyzing detected columns,
+    and a second time by starting from the sum
+    over rows.
+    This two times prediction checking permit
+    us to analyze from another point of view
+    who may sometime detect cells difficulties
+    detectable in the other.
+    """
     debug = False
     # Horizontal prediction:
     counter_h = 0

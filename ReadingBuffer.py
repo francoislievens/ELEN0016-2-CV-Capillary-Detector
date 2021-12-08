@@ -1,3 +1,16 @@
+"""
+[ELEN0016-2]
+François Lievens
+Julien Hubar
+Matthias Pirlet
+December 2020
+
+This file implement the first thread of our algorithm who
+have have the role of reading successive frames from the
+input video by using OpenCV.
+All succesives frames and corresponding indexes are stored
+in a buffer who will be access by the next threads.
+"""
 import time
 import cv2
 from threading import Thread
@@ -8,6 +21,7 @@ class ReadingBuffer():
     """
     Implementation of a video reading buffer inspired by
     https://www.simonwenkel.com/2020/02/13/opencv_cuda_for_background_subtraction.html
+    The general frame of this thread was keep to implement our others threads.
     """
 
     def __init__(self,

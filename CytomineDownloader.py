@@ -1,3 +1,16 @@
+"""
+[ELEN0016-2]
+François Lievens
+Julien Hubar
+Matthias Pirlet
+December 2020
+
+This implementation was used on the basis of the
+code provided by the teacher assistant to download
+data from the given Cytomine database and to store
+it.
+Source: https://github.com/rvandeghen/elen0016-computer-vision-tutorial/tree/master/project/cytomine_script
+"""
 from cytomine import Cytomine
 from cytomine.models import *
 from cytomine.models.image import SliceInstanceCollection
@@ -9,8 +22,6 @@ import os
 import sys
 
 VERBOSE = False
-
-
 
 def download_annotations(public_key, private_key, data_path):
 

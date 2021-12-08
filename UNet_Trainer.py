@@ -1,3 +1,15 @@
+"""
+[ELEN0016-2]
+François Lievens
+Julien Hubar
+Matthias Pirlet
+December 2020
+
+This file contain the implementation of our training
+process for the UNet.
+This file also contain the evaluation procedure and
+plot the training curves.
+"""
 import numpy as np
 import pandas as pd
 import torch
@@ -199,13 +211,8 @@ def evaluate(data_path='UNet_Dataset',
         cv2.waitKey()
 
 
-
-
-
-
-
 if __name__ == '__main__':
 
-    #train(target_epoch=30, name='UNet_B')
-    #evaluate(name='UNet_A')
+    train(target_epoch=30, name='UNet_B')
+    evaluate(name='UNet_A')
     plot_UNet_logs(model_name='UNet_D')

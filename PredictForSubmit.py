@@ -1,3 +1,20 @@
+"""
+[ELEN0016-2]
+François Lievens
+Julien Hubar
+Matthias Pirlet
+December 2020
+
+This file implement a more simple version of our algorithm
+(no multi-thread) that we used during the challenges.
+The particularity of this implementation is that we detect
+all droplets for each frames and all are feed to our UNet.
+By this way we can output all detected elements of all frames
+of interest.
+
+This implementation don't perform the counting of detected
+objects.
+"""
 import cv2
 import numpy as np
 import torch
@@ -6,6 +23,7 @@ from utils import get_droplet_coordinates
 from utils import count_peaks_2d
 import sys
 
+# Change the following path to the target video
 INPUT_PATH = 'Original_Dataset/images/CV2021_GROUP02/group2.mp4'
 UNET_PATH = 'Model/UNet_A/model_weights.pt'
 OUTPUT_PATH = 'Output_Results'

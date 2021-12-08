@@ -1,3 +1,14 @@
+"""
+[ELEN0016-2]
+François Lievens
+Julien Hubar
+Matthias Pirlet
+December 2020
+
+This file contain the code that we build to
+generate a dataset used during the training
+of the UNet
+"""
 import numpy as np
 import cv2
 import torch
@@ -5,14 +16,11 @@ import os
 import sys
 import time
 import config
-
-
 from utils import prepare_annotations
 
 DEVICE = 'gpu'
 
 MIN_DRP_WIDTH = 250
-
 
 def create_UNet_dataset(vid_path, annot_path, start_idx, output_path):
 
@@ -89,7 +97,6 @@ def create_UNet_dataset(vid_path, annot_path, start_idx, output_path):
             output_idx += 1
 
         frame_idx += 1
-
 
     return output_idx
 

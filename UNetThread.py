@@ -1,3 +1,15 @@
+"""
+[ELEN0016-2]
+François Lievens
+Julien Hubar
+Matthias Pirlet
+December 2020
+
+This file implement a thread who loads weights of our
+previously trained UNet.
+This thread takes data from the UNet buffer and predict
+a mask on which it apply the cell detections methods.
+"""
 import time
 import cv2
 from threading import Thread

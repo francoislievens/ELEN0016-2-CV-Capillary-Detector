@@ -1,10 +1,18 @@
+"""
+[ELEN0016-2]
+François Lievens
+Julien Hubar
+Matthias Pirlet
+December 2020
+
+This file can be used after using our main implementation
+(main.py) over one specific input file to read this video
+and plotting detected boxes.
+"""
 import cv2
 import pandas as pd
 import numpy as np
 import sys
-
-
-
 
 if __name__ == '__main__':
 
@@ -33,10 +41,5 @@ if __name__ == '__main__':
                                       (125, 125, 125), 8)
         cv2.imshow('window', frame)
         cv2.waitKey()
-
-
-
-
-
 
         frame_idx += 1

@@ -1,3 +1,16 @@
+"""
+[ELEN0016-2]
+François Lievens
+Julien Hubar
+Matthias Pirlet
+December 2020
+
+This code was used to perform a simple statistical
+analysis of the input annotated data.
+Results from this code was used to help us to determine
+some of the thresholds that we used in our final
+implementation.
+"""
 import pandas as pd
 from utils import prepare_annotations
 import config

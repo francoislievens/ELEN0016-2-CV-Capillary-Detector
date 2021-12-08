@@ -1,3 +1,17 @@
+"""
+[ELEN0016-2]
+François Lievens
+Julien Hubar
+Matthias Pirlet
+December 2020
+
+This file implement the thread responsible to the counting
+of droplets by using MOG generated masks from the previous
+thread.
+Droplets who fully appear for the second time are cropped,
+resized and put into a buffer to be access by the next
+threads, responsible of the cell detection part.
+"""
 import time
 import cv2
 from threading import Thread

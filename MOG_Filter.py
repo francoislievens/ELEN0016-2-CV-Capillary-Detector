@@ -1,3 +1,17 @@
+"""
+[ELEN0016-2]
+François Lievens
+Julien Hubar
+Matthias Pirlet
+December 2020
+
+In this file, we are implementing a thread who applay on
+each outputs from the reading buffers the Mixture of
+Gaussian filter.
+Output masks, original frame and corresponding frames
+indexes are stored in a buffer implemented by a FIFO
+list and who can be accessed by the next thread.
+"""
 import time
 import cv2
 from threading import Thread
@@ -6,11 +20,6 @@ import numpy as np
 
 
 class MOG_filter():
-    """
-    This class is used to apply the Mixture of gaussian cuda
-    implementation of open-cv in a thread and store the obtained
-    mask + the original frame in a buffer.
-    """
 
     def __init__(self,
                  input_buffer,

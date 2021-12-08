@@ -1,3 +1,14 @@
+"""
+[ELEN0016-2]
+François Lievens
+Julien Hubar
+Matthias Pirlet
+December 2020
+
+This file implement a data handler to manage
+a previously build dataset (using UNet_DatasetBuilder
+class) during the UNet training process
+"""
 import os
 from random import random
 import numpy as np

@@ -1,3 +1,15 @@
+"""
+[ELEN0016-2]
+François Lievens
+Julien Hubar
+Matthias Pirlet
+December 2020
+
+This thread takes outputs frames from the droplet detector thread,
+who consist in cropped images around droplets.
+This images are tensorized and stored into a buffer who can
+be accessed by the UNet Thread to count cells.
+"""
 import time
 from threading import Thread
 from queue import Queue
