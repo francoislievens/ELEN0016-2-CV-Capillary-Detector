@@ -131,7 +131,9 @@ implementation. This repository contains also all our sub-procedures:
    during our detections procedures.
    
 
-
+Generally, our classes contain a main method that can be execute to test the implementation. Some DEBUG or SHOW
+class variables can also be set to True in order to outputs all intermediate results to visually analyze the
+process.
 
 
 
