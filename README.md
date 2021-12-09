@@ -17,7 +17,7 @@ multiple frames in which they appear during her travelling inside the capillary)
 5. The histogram who describe the number of droplets who contain each possible 
 number of cells.
 
-All More results of this projects can be see in the [Poster](https://github.com/francoislievens/ELEN0016-2-CV-Capillary-Detector/blob/main/Poster-Commu-final.pdf)
+All More results of this projects can be see in the [Poster](https://github.com/francoislievens/ELEN0016-2-CV-Capillary-Detector/blob/main/Poster.pdf)
 and in the [Notebook](https://github.com/francoislievens/ELEN0016-2-CV-Capillary-Detector/blob/main/NOTEBOOK.ipynb).
 
 At the end of the day, our model can perform up to 546 frames per second on our
