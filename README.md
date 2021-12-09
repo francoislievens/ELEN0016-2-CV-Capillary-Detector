@@ -115,6 +115,9 @@ implementation. This repository contains also all our sub-procedures:
    for the UNet.
    4. [UNet_Trainer](https://github.com/francoislievens/ELEN0016-2-CV-Capillary-Detector/blob/main/UNet_Trainer.py):
    This code implement the training and evaluation procedures of our UNet.
+   5. [Model](https://github.com/francoislievens/ELEN0016-2-CV-Capillary-Detector/tree/main/Model/):
+   This folder contain the weights and trainings logs of our UNet model. The final weights that we have chosen
+   are UNet_A.
 
 4. Some other files who contain sub procedures:
    1. [utils.py](https://github.com/francoislievens/ELEN0016-2-CV-Capillary-Detector/blob/main/utils.py).
@@ -124,6 +127,7 @@ implementation. This repository contains also all our sub-procedures:
    4. [DataStatistics.py](https://github.com/francoislievens/ELEN0016-2-CV-Capillary-Detector/blob/main/DataStatistics.py):
    Who perform som statistical analysis of the original dataset in order to better set our different thresholds
    during our detections procedures.
+   
 
 
 
