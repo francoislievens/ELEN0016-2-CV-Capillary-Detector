@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="063d9119-25ad-4736-9b30-51ea26fb1f46" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStatistics.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataStatistics.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NOTEBOOK.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/NOTEBOOK.ipynb" afterDir="false" />
-    </list>
+    <list default="true" id="063d9119-25ad-4736-9b30-51ea26fb1f46" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,6 +21,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\franc\Documents\Unif\ELEN0016-2-CV-Capillary-Detector\Model\UNet_A" />
+    </key>
   </component>
   <component name="RunManager" selected="Python.PredictForSubmit">
     <configuration name="DataStatistics" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -162,6 +163,10 @@
       <workItem from="1638967732488" duration="122000" />
       <workItem from="1638967872873" duration="13000" />
       <workItem from="1638967917543" duration="14797000" />
+      <workItem from="1639051607300" duration="497000" />
+      <workItem from="1639060567858" duration="16000" />
+      <workItem from="1639061085939" duration="131000" />
+      <workItem from="1639061669109" duration="3987000" />
     </task>
     <servers />
   </component>
